@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+
+/* applysample. css */
+
+
+/* main */
+main {
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    position: relative;
+    /*.bgcover, titlebox의 기준이 됩니다.*/
+    background: url(../images/applysample/applysample.img01.jpg) no-repeat center center;
+    background-size: cover;
+}
+main div.bgcover {
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+main div.titlebox {
+    width : 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    /*초기값*/
+    top: 55%;
+    opacity: 0;
+}
+main div.titlebox h2 {
+    font-size: 40px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+main div.titlebox .desbox p {
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+}
+
+/* 신청방법 및 절차 */
+article.apply {
+    width: 100%;
+    max-width: 1920px;
+    margin: 50px auto 50px;
+    padding-bottom: 50px;
+}
+/* 공통 클래스 적용중 */
+article.apply div.subtit {
+    padding-top: 130px;
+    margin-bottom: 50px;
+}
+article.apply .subtit h3 {}
+article.apply .subtit p {}
+article.apply div.step {}
+article.apply .step ul {
+    width: 100%;
+    height : 340px;
+    position: relative; /* .stepbox의 기준이 됩니다.*/
+}
+article.apply .step ul li.stepbox {
+    width: 20%;
+    position: absolute;
+    /*초기값*/
+    left : -100%;
+}
+article.apply .step ul li.stepbox p{
+    font-size : 14px;
+    font-size : 0.875rem;
+    line-height: 1.2;
+}
+article.apply .step ul .stepbox .imgbox {
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px #ccc;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+article.apply .step ul .stepbox .imgbox img {
+    display: block;
+    width: 100%;
+    transition: all 0.3s;
+}
+article.apply .step ul .stepbox .imgbox:hover img {
+    transform: scale(1.1);
+}
+article.apply .step ul .stepbox div.steptitbox {
+    text-align: center;
+    color: #333;
+    /* 초기값 */
+    display: none;
+}
+/* sample list */
+article.sample {
+    width: 100%;
+    max-width: 1920px;
+    margin: 50px auto 50px;
+    padding-bottom: 50px;
+}
+.sample div.subtit {
+    margin-bottom: 50px;
+}
+.sample div.container {
+}
+.sample .container ul.sample_container {
+    margin-bottom: 30px;
+}
+.sample div.container a.btn{
+    margin : 0 auto;
+}
+.sample .container .sample_container .samplebox {
+    width: 15%;
+    margin-bottom: 20px;
+    position: relative;     /*txtbox의 기준이 됩니다.*/
+    border-radius: 30px;
+    overflow: hidden;
+
+    /* 초기값 */
+    display : none;
+}
+.sample .container .sample_container .samplebox:hover{
+    background-color: #eee;
+    box-shadow : 3px 3px 5px #ccc;
+}
+.sample .container .sample_container .samplebox~.samplebox {
+    margin-left: 2%;
+}
+.sample .container .sample_container .samplebox:nth-child(6n + 1) {
+    margin-left: 0;
+}
+.sample .container .sample_container .samplebox div.imgbox {
+    width: 100%;
+}
+.sample .container .sample_container .samplebox div.imgbox img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+.sample .container .sample_container .samplebox div.txtbox{
+    width : 100%;
+    height : 90px;
+    padding-top : 10px;
+    padding : 10px 5px 5px 5px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+
+    /* 초기값 */
+    display: none;
+}
+.sample .container .sample_container .samplebox:hover .txtbox{
+    display: block;
+}
+.sample .container .sample_container .samplebox div.txtbox h4 {
+    font-size : 16px;
+    font-size : 1rem;
+    font-weight : 400;
+    letter-spacing: -1px;
+    color: #fff;
+    word-break: keep-all;
+}
+/* 공통 스타일 */
+.subtit {
+    text-align: center;
+}
+.subtit h3 {
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+}
+.subtit p {
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+}
+.innercontent {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+}

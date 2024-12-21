@@ -1,0 +1,291 @@
+@charset "utf-8";
+
+
+/* index.css */
+/* 이거 위치 여쭤보기.. */
+
+
+html,body{
+    overflow: hidden;
+}
+
+main{
+    width : 100%;
+    height : 100%;
+    position: relative; /* video의 기준이 됩니다.*/
+    overflow: hidden;
+}
+main video{
+    width : 100%;
+    max-width: 1920px;
+    /* 기준점 설정*/
+    position : absolute; 
+    left : 50%; /* 기준점 설정*/
+    transform : translateX(-50%); /* 콘텐츠 위치 이동 */
+}
+
+/* section sample */
+section.sample{
+    width : 100%;
+    height : 100%;
+    max-width : 1920px;
+    margin : 0 auto;
+
+    padding-top : 100px;
+    box-sizing: border-box;
+    position :relative; /* .content와 .btn의 기준이 됩니다.*/
+}
+section.sample .titbox{
+}
+section.sample .content{
+    width : 100%;
+    padding : 10px 0;
+    position: absolute;
+    top : 50%;
+    transform: translateY(-40%);
+    overflow: hidden;
+}
+section.sample .content .sample_slide{
+    width : 200%;
+    position: relative;
+}
+section.sample .content .sample_slide li.imgbox{
+    width : 7.33%;
+    margin-left : 1%;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+section.sample .content .sample_slide .imgbox img{
+    width : 100%;
+    display: block;
+}
+section.sample .btn{
+    position: absolute;
+    bottom: 10%;
+    left : 50%;
+    transform: translateX(-50%);
+}
+
+/* section product */
+section.product{
+    width : 100%;
+    height : 100%;
+    margin : 0 auto;
+}
+section.product .content{
+    width : 100%;
+    height : 100%;
+    position: relative; /* .titbox .prev .next의 기준이 됩니다.*/
+    overflow: hidden;
+}
+section.product .content .titbox{
+    position: absolute;
+    top : 100px;
+    left : 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+
+}
+section.product .content .slider{
+    width : 300%;
+}
+section.product .content .slider .slide{
+    float : left;
+    width : 33.33%;
+    height : 100vh;
+    position : relative; /*slide 하위요소 .txtbox의 기준이 됩니다.*/
+}
+section.product .content .slider .slide img{
+    width : 100%;
+    height : 100%;
+    display: block;
+}
+section.product .content .slider .slide .txtbox{
+    position: absolute;
+    left : 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+    
+    /* 초기값 */
+    top : 55%;
+    opacity: 0;
+}
+section.product .content .slider .slide .txtbox h3{
+    font-size : 40px;
+    font-size : 2.5rem;
+}
+section.product .content .slider .slide .txtbox p{
+    margin-bottom : 20px;
+}
+section.product .content .slider .slide .txtbox .btn{
+    margin : 0 auto;
+}
+section.product .content .prev{
+    width : 40px;
+    height : 40px;
+    background: url(../images/common/Ellipsearrow_icon_left.png) no-repeat 0px center;
+    font-size : 0;
+    position: absolute;
+    top : 55%;
+    left : 70px;
+}
+section.product .content .next{
+    width : 40px;
+    height : 40px;
+    background: url(../images/common/Ellipsearrow_icon_right.png) no-repeat 0px center;
+    font-size : 0;
+    position: absolute;
+    top : 55%;
+    right : 70px;
+}
+section.product .content .prev:hover{
+    background-position: -40px;
+}
+section.product .content .next:hover{
+    background-position: -40px;
+}
+
+
+/* daily */
+section.daily .titbox{
+    padding-top : 50px;
+    background : url(../images/common/daily72px.png) no-repeat center 15px;
+    background-size: 32px;
+}
+section.daily .content .slider .slide .txtbox h3{
+    color : #333;
+}
+section.daily .content .slider .slide .txtbox p{
+    color : #333;
+}
+
+/* night */
+section.night .titbox{
+    padding-top : 50px;
+    background : url(../images/common/night72px.png) no-repeat center 15px;
+    background-size: 32px;
+}
+section.night .content .titbox h2{
+    color : #fff;
+}
+section.night .content .titbox p{
+    color : #fff;
+}
+section.night .content .slider .slide .txtbox h3{
+    color : #fff;
+}
+section.night .content .slider .slide .txtbox p{
+    color : #fff;
+}
+section.night .content .slider .slide .txtbox .btn{
+    color : #fff;
+    border : 1px solid #fff;
+}
+section.night .content .slider .slide .txtbox .btn:hover{
+    border : 1px solid #f1b300;
+}
+
+/* section upcycle */
+section.upcycle{
+    width : 100%;
+    height : 100%;
+    max-width : 1920px;
+    margin : 0 auto;
+
+    padding-top : 100px;
+    box-sizing: border-box;
+}
+section.upcycle .titbox{
+    margin-bottom: 30px;
+}
+section.upcycle .content{
+    width : 100%;
+    padding : 0 70px;
+    box-sizing: border-box;
+}
+section.upcycle .content .artbox{
+    width : 48%;
+    position: relative; /*.bgcolor의 기준이 됩니다.*/
+    box-shadow: 1px 1px 10px #999;
+}
+.l_content{
+    /* 초기값 */
+    left : -10%;
+}
+.r_content{
+    /* 초기값 */
+    right : -10%;
+}
+section.upcycle .content .artbox .imgbox{
+    width : 100%;
+}
+section.upcycle .content .artbox .imgbox img{
+    width : 100%;
+    display: block;
+}
+section.upcycle .content .artbox .cover{
+    width : 100%;
+    height : 100%;
+    position: absolute;
+    top : 0;
+    left : 0;
+    background-color: rgba(0,0,0,0.7);
+
+    /* js에서 fadeIn()메서드로 제어합니다. */
+    display: none; 
+}
+section.upcycle .content .artbox .txtbox{
+    width : 100%;
+    text-align: center;
+    position: relative; /*좌표값을 사용하기 위해 설정합니다.*/
+    top : 50%;
+    transform: translateY(-50%);
+}
+section.upcycle .content .artbox .txtbox h3{
+    font-size : 20px;
+    font-size : 1.25rem;
+    color : #fff;
+    margin-bottom : 20px;
+}
+section.upcycle .content .artbox .txtbox a{
+    color : #fff;
+    margin : 0 auto;
+}
+section.upcycle .content .l_content{
+    float : left;
+}
+section.upcycle .content .r_content{
+    float : right;
+}
+
+
+
+.inner{
+    width :100%;
+    max-width : 1920px;
+    margin : 0 auto;
+    box-sizing: border-box;
+}
+
+.titbox{
+    padding : 30px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.titbox h2{
+    font-size : 24px;
+    font-size : 1.5rem;
+    font-weight: 700;
+    color : #333;
+    margin-bottom: 5px;
+}
+.titbox p{
+    font-size : 16pz;
+    font-size : 1rem;
+    font-weight: 400;
+    color : #333;
+    line-height : 1.2;
+
+}

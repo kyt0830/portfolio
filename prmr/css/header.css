@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+
+/* header.css */
+
+/* header */
+header{
+    width : 100%;
+    height : 100px;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed; /* header고정 과 lnb의 배경 .bgcolor의 기준이 됩니다. */
+    top : 0;
+    left : 0;
+    z-index: 999; /* 레이어 개념, 가장 상위에 있도록 설정*/
+}
+header .inner{
+    position: relative; /* nav.menu의 기준이 됩니다. */
+    padding : 0 70px;
+}
+header h1.logo{
+    float : left;
+    padding : 30px 0;
+}
+header h1.logo a img{
+    display: block;
+    height : 40px;
+}
+
+header nav.menu{
+    width : 70%;  /* gnb의 li가 width 20% 을 갖기 위한 값*/ 
+    padding : 0 10%;
+    box-sizing: border-box;
+    text-align: center;
+
+    position: absolute; /* 중앙 배치를 위한 position 설정 */
+    top : 0;
+    left : 50%;
+    transform : translateX(-50%);
+    z-index: 888; /*lnb가 .bgcolor보다 위에 배치 되도록 설정*/
+
+}
+
+/* gnb */
+header nav.menu ul.gnb{
+}
+header nav.menu ul.gnb > li{
+    width : 20%;
+}
+header nav.menu ul.gnb > li > a{
+    line-height : 100px;
+    color : #fff;
+}
+header nav.menu ul.gnb > li > a:hover{
+    color : #f1b300;
+    font-weight : 600;
+}
+
+/* lnb */
+header nav.menu ul.lnb{
+    display: none; /* lnb의 초기 셋팅 값 */
+}
+header nav.menu ul.lnb li{
+    float : none; /* reset에서 설정된 float 해제 */
+}
+header nav.menu ul.lnb li a{
+    line-height : 50px;
+    color : #fff;
+}
+header nav.menu ul.lnb li a:hover{
+    color : #f1b300;
+    font-weight : 600;
+}
+/* lnb의 배경 */
+header div.bgcolor{
+    width : 100%;
+    height : 150px; /*나중에 jQ로 높이값 설정과 제어하도록 한다.*/
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top : 100px;
+    left : 0;
+
+    display: none; /* bgcolor의 초기 셋팅 값 */
+}
+
+header div.util{
+    float : right;
+    height : 72px;
+    padding : 14px 0;
+}
+header div.util a{
+    float : left;
+    color : #fff;
+}
+header div.util a img{
+    display: block;
+    height : 32px;
+    padding : 20px;
+}
+header div.util a.login{
+    margin-left : 10px;
+    font-size : 18px;
+    font-size : 1.125rem;
+    padding : 24px 9px;
+}
+header div.util a:hover{
+    outline : 1px dotted #eee;
+}
+
+
+/* 검색 상자 */
+header div.search-box{
+    width : 100%;
+    height : 200px; /*나중에 jQ로 높이값 설정과 제어하도록 한다.*/
+    padding : 30px 0;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.8);
+
+    position: absolute;
+    top : 100px;
+    left : 0;
+    
+    display: none; /* bgcolor의 초기 셋팅 값 */
+    z-index: 888; /*search-box z- index값을 설정하여 일반적인 content보다 상위에 배치 되도록 설정*/
+}
+header div.search-box h2{
+    font-size : 24px;
+    font-size : 1.5rem;
+    text-align: center;
+    color : #fff;
+}
+header div.search-box form{
+    width : 500px;
+    margin : 10px auto 0;
+    text-align: center;
+    /* outline: 3px solid red; */
+}
+header div.search-box form fieldset{
+    border : none;
+}
+header div.search-box form input[type="search"]{
+    width : 400px; /* 고정된 크기로 설정 */
+    height : 30px;
+    color : #fff;
+    outline: none;
+    border : none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+}
+header div.search-box form input[type="search"]::placeholder{
+    font-weight : 300;
+}
+header div.search-box form input[type="submit"]{
+    width : 24px;
+    height : 24px;
+    font-size : 0;
+    background-color: transparent;
+    background: url(../images/common/search_icon.png) no-repeat center center;
+    outline: none;
+    border : none;
+}
+header div.search-box div.keywords{
+    width : 500px; /* 고정된 크기로 설정 */
+    margin : 0 auto;
+    margin-top : 5px;
+}
+header div.search-box div.keywords p{
+    width : 20%; 
+    color : #fff;
+    float : left;
+    /* outline: 3px solid red; */
+}
+header div.search-box div.keywords div.keywordsbox{
+    width : 80%;
+    float : left;
+    /* outline: 3px solid green; */
+}
+header div.search-box div.keywords div.keywordsbox a{
+    display: inline-block; 
+    margin-bottom: 5px;
+    padding : 3px 5px;
+    font-size : 14px;
+    font-size : 0.875rem;
+    font-weight : 300;
+    color : #f1b300;
+    border : 1px solid #f1b300;
+    border-radius: 5px;
+}
+header div.search-box div.keywords div.keywordsbox a:hover{
+    background-color: #f1b300;
+    color : #fff;
+}
+
+

@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+
+/* brand.css */
+html,body{
+    overflow: hidden;
+}
+
+body{
+    position : relative;
+}
+main{
+    width : 100%;
+    height : 100%;
+    max-width: 1920px;
+    margin : 0 auto;
+
+    background : url(../images/brand/brand_img01.jpg) no-repeat center center fixed;
+    background-size: cover;
+    position: relative; /*.bgcover의 기준이 됩니다.*/
+    z-index: 888; /* .seedtech보다 위에 있어야 하므로 설정*/
+}
+main div.contentbox{
+    width : 100%;
+    height : 100%;
+    position: absolute; /*.imgbox .txtbox의 기준이 됩니다.*/
+    text-align: center;
+}
+main div.contentbox img{
+    position: relative;
+    top : 50%; /*초기값*/
+    opacity: 0; /*초기값*/
+}
+main .contentbox h2{
+    font-size : 20px;
+    font-size : 1.25rem;
+    font-weight : 400;
+    color : #fff;
+    position: relative;
+    top : 50%; /*초기값*/
+    opacity: 0; /*초기값*/
+}
+/* main의 검정색 커버버 */
+.bgcover{
+    width : 100%;
+    height : 100%;
+    background-color: rgba(0,0,0,0.8);
+    /* position: absolute; */
+    top : 0;
+    left : 0;
+}
+
+article{
+    width : 100%;
+    height : 100%;
+    max-width: 1920px;
+    margin : 0 auto;
+}
+article div.left_content{
+    float : left;
+    width : 50%;
+    height : 100%;
+}
+article div.right_content{
+    float : right;
+    width : 50%;
+    height : 100%;
+    position : relative; /*.txtbox의 기준이 됩니다.*/
+    background-color: #fff;
+
+}
+article .right_content div.txtbox{
+    width : 100%;
+    position: absolute;
+    top : 50%;
+    left : 0;
+    transform: translateY(-40%);
+    text-align: center;
+}
+article .right_content .txtbox h2.subtit{
+    font-size : 40px;
+    font-size : 2.5rem;
+    margin-bottom: 5px;
+}
+article .right_content .txtbox p.des{
+    font-size : 20px;
+    font-size : 1.625rem;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+article .right_content .txtbox p{
+    font-size : 16px;
+    font-size : 1rem;
+    line-height : 1.2;
+    margin-bottom : 30px;
+}
+article .right_content .txtbox a{
+    width : 40px;
+    height : 40px;
+    margin : 0 auto;
+    font-size : 0;
+}
+
+
+/* technology */
+article.technology .left_content{
+    background: url(../images/brand/brand_img02.jpg) no-repeat center center;
+    background-size : cover
+}
+article .right_content .txtbox #open{
+    background: url(../../images/common/Ellipsearrow_icon_bottom.png) no-repeat center center;
+}
+
+/* seedtech */
+article.seedtech{
+    position : absolute;
+    top : 0 ; /*js를 위한 초기값*/
+    left : 50% ;
+    transform: translateX(-50%);
+    z-index: 444;
+}
+article.seedtech .left_content{
+    background: url(../images/brand/brand_img03.jpg) no-repeat center center;
+    background-size : cover
+}
+article .right_content .txtbox #close{
+    background: url(../../images/common/Ellipsearrow_icon_top.png) no-repeat center center;
+
+}

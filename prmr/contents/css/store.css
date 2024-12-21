@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* store.css */
+
+.innercontent{
+    width : 100%;
+    max-width : 1320px;
+    margin : 0 auto;
+
+    background-color: #fff;
+}
+
+/* 검색박스 */
+div.searchstore{
+    width : 100%;
+    padding-top :130px;
+}
+div.searchstore div.titbox{
+    margin-bottom: 10px;
+}
+div.searchstore .titbox h2{
+    font-size : 24px;
+    font-size : 1.5rem;
+    text-align: center;
+    color : #333;
+}
+div.searchstore div.formbox{
+}
+div.searchstore .formbox form{
+    text-align: center;
+}
+div.searchstore .formbox form fieldset{
+    border : none;
+}
+div.searchstore .formbox form fieldset input{}
+div.searchstore .formbox form fieldset input[type='search']{
+    width : 400px;
+    height : 30px;
+    padding-left : 10px;
+    outline : none;
+    border : 1px solid #ccc;
+}
+div.searchstore .formbox form fieldset input[type='submit']{
+    width : 24px;
+    height : 24px;
+    outline : none;
+    border : none;
+    font-size : 0;
+    vertical-align: middle;
+    background: url(../images/store/search_icon_ver_black.png) no-repeat center center;
+    background-size: 100%;
+}
+
+/* 매장 검색 결과과 */
+main{
+    width : 100%;
+    height : 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    padding-top : 50px;
+    box-sizing: border-box;
+}
+
+main div.content{
+    width : 100%;
+    height : 550px;
+    box-shadow: 1px 1px 5px #999;
+}
+/* 왼쪽 박스 */
+main div.content div.wrap{
+    float : left;
+    width : 25%;
+    padding : 0px 10px 10px 10px;
+    box-sizing: border-box;
+}
+main div.content div.wrap div.subtitbox{
+    padding : 8px 0px 8px 10px;
+    border-bottom: 1px solid #333;
+}
+main div.content div.wrap div.subtitbox p{
+    font-size : 16px;
+    font-size : 1rem;
+    color : #333;
+}
+main div.content div.wrap div.searchlist{
+    padding-top : 10px;
+}
+main div.content div.wrap div.searchlist ul{
+    height : 500px;
+    overflow-y: scroll;
+}
+main div.content div.wrap div.searchlist ul li.placebox{
+    width : 95%;
+    box-sizing: border-box;
+    padding: 5px 10px 5px 35px;
+    margin-bottom: 10px;
+    position: relative; /*li::before의 기준이 됩니다.*/
+    border-bottom: 1px solid #999;
+}
+main div.content div.wrap div.searchlist ul li.placebox:hover{
+    background-color: #eee;
+}
+main div.content div.wrap div.searchlist ul li.placebox::before{
+    /* li의 index주소값 + 1을 content값으로 전달 */
+    content: "1";
+    display: block;
+    width : 24px;
+    height : 24px;
+    color : #fff;
+    text-align: center;
+    background-color: #f1b300;
+    position: absolute;
+    left : 5px;
+}
+main div.content div.wrap div.searchlist ul li.placebox a{
+    color : #333;
+}
+main div.content div.wrap div.searchlist ul li.placebox a h6{
+    font-size : 16px;
+}
+main div.content div.wrap div.searchlist ul li.placebox a span{
+    display: block;
+    font-size : 14px;
+    font-weight : 300;
+    letter-spacing: -1px;
+    word-break: keep-all;
+}
+
+/* 오른쪽 지도 박스 */
+main div.content div.map{
+    float : right;
+    width : 75%;
+    height : 100%;
+}

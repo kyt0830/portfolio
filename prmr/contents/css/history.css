@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/* ourhistory.css */
+
+main{
+    width : 100%;
+    max-width: 1920px;
+    margin : 0 auto;
+
+    padding-top : 100px;
+    box-sizing: border-box;
+}
+main div.titbox{
+    text-align: center;
+    margin-top : 30px;
+    margin-bottom: 80px;
+}
+main div.titbox h2{    
+    font-size : 24px;
+    font-size : 1.5rem;
+    font-weight: 700;
+    color : #333;
+}
+main div.titbox p{
+    font-size : 16px;
+    font-size : 1rem;
+    font-weight: 400;
+    color : #333;
+}
+
+/* article 공통 css */
+article{
+    width : 100%;
+    padding : 0 70px;
+    box-sizing: border-box;
+    margin-bottom: 150px;
+    position: relative; /* .wordsbox의 기준이 됩니다. */
+}
+article div.content{
+    /* width : 48%; */
+    position: relative; /* .txtbox .txtbox a의 기준이 됩니다. */
+    
+    /* 초기값 */
+    opacity : 0;
+}
+article > .content:first-child{
+    float : left;
+    left : -70px;
+}
+article > .content:last-child{
+    float : right;
+    right : -70px;
+}
+article .content .imgbox{
+    overflow: hidden;
+    box-shadow: 1px 1px 10px #ccc;
+    position: relative; /* .txtbox의 기준이 됩니다. */
+}
+article .content .imgbox img{
+    display: block;
+}
+article .content .imgbox div.txtbox{
+    width : 100%;
+    height : 100%;
+    position: absolute;
+    top : 0%;
+    left : 0%;
+    display: none;
+    background-color: rgba(0,0,0,0.7);
+}
+article .content .imgbox .txtbox a{
+    width : 80%;
+    font-size : 20px;
+    font-size : 1.25rem;
+    text-align: center;
+    color : #fff;
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+    word-break: keep-all;
+    
+}
+article div.wordsbox{
+    position: absolute;
+    bottom : 0%;
+    /* 초기값 */
+    opacity : 0;
+}
+article div.odd{
+    left : 0px;
+}
+article div.even{
+    right : 0px;
+}
+article .wordsbox p{
+    color : #333;
+    font-size : 160px;
+    font-size : 10rem;
+    font-weight : 600;
+    line-height: 200px;
+    letter-spacing: -5px; 
+    text-shadow: 3px 3px 5px #999;
+
+}
+.wordsbox p::first-letter{
+    color : #f1b300;
+    font-size : 220px;
+    font-size : 13.75rem;
+    font-weight : 800;
+}
+
+.imgwidth{
+    width : 100%;
+}
+.imgheight{
+    height : 100%;
+}
+.tr_radius{
+    border-top-right-radius: 200px;
+}
+.tl_radius{
+    border-top-left-radius: 200px;
+}
+.br_radius{
+    border-bottom-right-radius: 200px;
+}
+.bl_radius{
+    border-bottom-left-radius: 200px;
+}
+
+

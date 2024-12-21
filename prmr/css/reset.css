@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* reset.css */
+
+
+ /* .noto-sans-kr-<uniquifier> {
+font-family: "Noto Sans KR", serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal; */
+
+*{
+    margin : 0;
+    padding : 0;
+}
+body{
+    font-family: "Noto Sans KR", serif;
+}
+ul, ol, li{
+    list-style : none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size : 100%;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+ul::after, ol::after{
+    content : "";
+    display: block;
+    clear : both;
+}
+li{
+    float : left;
+}
