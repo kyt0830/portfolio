@@ -207,7 +207,6 @@ article.done {
     box-sizing: border-box;
     /* 초기값 */
     display: none;
-    border : 1px solid red;
 }
 
 .done .container div.contentbox~.contentbox {
