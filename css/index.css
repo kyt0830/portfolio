@@ -4,7 +4,9 @@
 /* index.css */
 /* 이거 위치 여쭤보기.. */
 
-
+.cwhite{
+    color : #fff !important;
+}
 html,body{
     overflow: hidden;
 }

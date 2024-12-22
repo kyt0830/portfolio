@@ -47,7 +47,7 @@ div.searchstore .formbox form fieldset input[type='submit']{
     border : none;
     font-size : 0;
     vertical-align: middle;
-    background: url(../images/store/search_icon_ver_black.png) no-repeat center center;
+    background: url(/portfolio/contents/images/store/search_icon_ver_black.png) no-repeat center center;
     background-size: 100%;
 }
 

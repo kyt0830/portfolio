@@ -12,7 +12,7 @@ main.mission{
     height : 100%;
     max-width: 1920px;
     margin : 0 auto;
-    background: url(../images/ourmission/brand_our_img01.jpg) no-repeat center center fixed;
+    background: url(/portfolio/contents/images/ourmission/brand_our_img01.jpg) no-repeat center center fixed;
     background-size: cover;
 
     position: relative; /* .bgcover의 기준이 됩니다.*/
@@ -135,19 +135,19 @@ article .txtbox h3{
 
 /* article 1 ~ 4 bgimg */
 #promise{
-    background: url(../images/ourmission/brand_our_img02.jpg) no-repeat center center fixed;
+    background: url(/portfolio/contents/images/ourmission/brand_our_img02.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 #respect{
-    background: url(../images/ourmission/brand_our_img03.jpg) no-repeat center center fixed;
+    background: url(/portfolio/contents/images/ourmission/brand_our_img03.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 #make{
-    background: url(../images/ourmission/brand_our_img04.jpg) no-repeat center center fixed;
+    background: url(/portfolio/contents/images/ourmission/brand_our_img04.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 #reuse{
-    background: url(../images/ourmission/brand_our_img05.jpg) no-repeat center center fixed;
+    background: url(/portfolio/contents/images/ourmission/brand_our_img05.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
