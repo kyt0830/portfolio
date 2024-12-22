@@ -5,7 +5,7 @@
 
 $(document).ready(function(){
     //header에 사용되는 jq
-    $('.gnb li').mouseenter(function () {
+    $('.gnb').mouseenter(function () {
         $('.lnb, .bgcolor').stop().slideDown(200);
     });
     $('nav').mouseleave(function () {
