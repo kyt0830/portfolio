@@ -112,7 +112,7 @@ $(document).ready(function () {
     //modal
     $('.sample_slide a').click(function(evt){
         evt.preventDefault();
-        console.log('샘플 이미지가 눌렸어~');
+        clearInterval(autoCall);
         // 이미지의 각 정보 담는 변수
         let getAlt;
         let getTit;
@@ -123,7 +123,6 @@ $(document).ready(function () {
         console.log('이미지의 alt : ' + getAlt);
         console.log('이미지의 tit : ' + getTit);
         console.log('이미지의 src : ' + getImgSrc);
-
         //이제 모달페이지 띄우고 내용 채워
         $('.modal_imgbox').find('img').attr('src',getImgSrc);
         $('.modal_txtbox').find('h2').html(getTit);
@@ -131,6 +130,7 @@ $(document).ready(function () {
         $('.modal_bg_color').show();
     });
     $('.modal_content .close').click(function(){
+        autoCall = setInterval(flowContent, 10);
         $('.modal_bg_color').hide();
     });
 
