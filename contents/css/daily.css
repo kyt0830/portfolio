@@ -64,7 +64,7 @@ main .container .item_container div.itembox{
     box-sizing: border-box;
     border : 1px solid #eee;
     /* 초기값 */
-    /*display : none;*/
+    display : none;
 }
 main .container .item_container .itembox ~ .itembox{
     margin-left : 1.3%;
@@ -103,10 +103,6 @@ main .container .item_container .itembox .txtbox p{
 main a{
     margin: 0 auto;
 }
-
-
-
-
 
 
 .innercontent{
