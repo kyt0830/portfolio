@@ -68,6 +68,94 @@ section.sample .btn{
     transform: translateX(-50%);
 }
 
+/* sample_modal */
+
+.modal_bg_color{
+    width : 100%;
+    height : 100%;
+    background-color: rgba(255,255,255,0.8);
+    position: fixed; /*고정됨과 동시에 .modal_content의 기준이 됩니다.*/
+    top : 0;
+    left : 0;
+    z-index: 444;
+    /* 초기값 */
+    display: none;
+}
+.modal_bg_color .modal_content{
+    width : 50%;
+    height : 50%;
+    padding : 40px 80px;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 8px #ccc;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    position : absolute; /*.close의 기준이 됩니다.*/
+    top : 50%;
+    left : 50%;
+    z-index: 555;
+    transform: translate(-50%, -50%);
+}
+.modal_bg_color .modal_content .modal_imgbox{
+    float : left;
+    width : 40%;
+    height : 100%;
+}
+.modal_bg_color .modal_content .modal_imgbox img{
+    width : 100%;
+    display: block;
+    transition: all 0.8s;
+}
+.modal_bg_color .modal_content .modal_imgbox:hover img{
+    transform: scale(1.2);
+}
+.modal_bg_color .modal_content .modal_txtbox{
+    float : right;
+    width : 55%;
+    height : 100%;
+    padding-top : 30px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    position: relative; /* .btn의 기준이 됩니다.*/
+    text-align: left;
+    /* outline: 3px solid red; */
+}
+.modal_bg_color .modal_content .close{
+    width : 32px;
+    height : 32px;
+    font-size : 0;
+    background: url(../images/common/Ellipsearrow_icon_close.png) no-repeat;
+    position: absolute;
+    top : 16px;
+    right : 16px;
+}
+.modal_bg_color .modal_content .close:hover{
+    background-position: -32px;
+}
+.modal_bg_color .modal_content .modal_txtbox h2{
+    font-size : 24px;
+    font-size : 1.5rem;
+    font-weight: 700;
+    color : #333;
+    margin-bottom: 50px;
+    word-break: keep-all;
+}
+.modal_bg_color .modal_content .modal_txtbox p{
+    font-size : 16px;
+    font-size : 1rem;
+    font-weight: 400;
+    color : #333;
+    line-height : 1.2;
+    word-break: keep-all;
+}
+.modal_bg_color .modal_content .modal_txtbox a{
+    position: absolute;
+    left : 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+}
+
 /* section product */
 section.product{
     width : 100%;

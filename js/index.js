@@ -108,6 +108,32 @@ $(document).ready(function () {
         //mouseleave
         $('> .cover', this).stop().fadeOut(400);
     });
+
+    //modal
+    $('.sample_slide a').click(function(evt){
+        evt.preventDefault();
+        console.log('샘플 이미지가 눌렸어~');
+        // 이미지의 각 정보 담는 변수
+        let getAlt;
+        let getTit;
+        let getImgSrc;
+        getAlt = $(this).find('img').attr('alt');
+        getTit = $(this).find('img').attr('title');
+        getImgSrc= $(this).find('img').attr('src');
+        console.log('이미지의 alt : ' + getAlt);
+        console.log('이미지의 tit : ' + getTit);
+        console.log('이미지의 src : ' + getImgSrc);
+
+        //이제 모달페이지 띄우고 내용 채워
+        $('.modal_imgbox').find('img').attr('src',getImgSrc);
+        $('.modal_txtbox').find('h2').html(getTit);
+        $('.modal_txtbox').find('p').html(getAlt);
+        $('.modal_bg_color').show();
+    });
+    $('.modal_content .close').click(function(){
+        $('.modal_bg_color').hide();
+    });
+
 });
 
 // 스크롤 이벤트
