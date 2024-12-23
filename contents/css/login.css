@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+
+
+
+
+/*section login 영역*/
+section.login {
+    width: 100%;
+    height: 100%;
+    min-height: 950px;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    background: url(/portfolio/content/images/login/login_bg_img01.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.login div.titbox {
+    padding-top: 160px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.login .titbox h2 {
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.login .titbox p {
+    font-size: 16pz;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.login div.loginbox {
+    width : 500px;
+    height : 400px;
+    margin: 0 auto;
+    padding : 50px 30px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.9);
+}
+fieldset{
+    border : none;
+}
+.login .loginbox form {
+    margin-bottom: 60px;
+}
+.login .loginbox form label{
+    display: inline-block;
+    color : #666;
+    padding-left : 30px;
+    margin-bottom: 30px;
+    font-family: "Noto Sans KR", serif;
+    position: relative; /*label::before의 기준이 됩니다.*/
+}
+.login .loginbox form label::before{
+    content: "";
+    display: inline-block;
+    width :24px;
+    height : 24px;
+    background: url(/portfolio/images/common/check_off_icon.png) no-repeat;
+    position: absolute;
+    left : 0;
+}
+.login .loginbox form input[type="text"], .login .loginbox form input[type="password"] {
+    display: block;
+    width : 440px;
+    height : 40px;
+    padding-left : 10px;
+    margin-bottom: 10px;
+    border : 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.login .loginbox form input[type="checkbox"] {
+    display: none;
+}
+.login .loginbox form input[type="checkbox"]:checked + label::before{
+    background: url(/portfolio/images/common/check_on_icon.png) no-repeat;
+}
+.login .loginbox form input[type="submit"] {
+    width : 200px;
+    height : 40px;
+    font-size : 18px;
+    font-size : 1.125rem;
+    color : #333;
+    display: block;
+    margin : 0 auto;
+    border : 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.login .loginbox form input[type="submit"]:hover{
+    background-color: #f1b300;
+    border : 1px solid #f1b300;
+    color : #fff;
+    font-weight : 500;
+}
+
+.login .loginbox ul li {
+    width : 33%;
+    text-align: center;
+}
+.login .loginbox ul li:hover a{
+    color : #333;
+    
+    font-weight : 500;
+}
+.login .loginbox ul li a {
+    color : #666;
+}
