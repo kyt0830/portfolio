@@ -112,7 +112,6 @@ $(document).ready(function () {
     //modal
     $('.sample_slide a').click(function(evt){
         evt.preventDefault();
-        clearInterval(autoCall);
         // 이미지의 각 정보 담는 변수
         let getAlt;
         let getTit;
@@ -130,7 +129,6 @@ $(document).ready(function () {
         $('.modal_bg_color').show();
     });
     $('.modal_content .close').click(function(){
-        autoCall = setInterval(flowContent, 10);
         $('.modal_bg_color').hide();
     });
 
