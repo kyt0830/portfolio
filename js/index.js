@@ -91,7 +91,7 @@ $(document).ready(function () {
             backgroundColor: 'transparent',
             boxShadow: 'none'
         })
-    })
+    });
 
     // daily의 next버튼 prev버튼
     $('.daily .next').click(dailyNextSlide);
@@ -112,7 +112,6 @@ $(document).ready(function () {
     //modal
     $('.sample_slide a').click(function(evt){
         evt.preventDefault();
-        clearInterval(autoCall);
         // 이미지의 각 정보 담는 변수
         let getAlt;
         let getTit;
@@ -128,9 +127,11 @@ $(document).ready(function () {
         $('.modal_txtbox').find('h2').html(getTit);
         $('.modal_txtbox').find('p').html(getAlt);
         $('.modal_bg_color').show();
+        clearInterval(autoCall);
     });
+
     $('.modal_content .close').click(function(){
-        autoCall = setInterval(flowContent, 10);
+        // autoCall = setInterval(flowContent, 10);
         $('.modal_bg_color').hide();
     });
 
