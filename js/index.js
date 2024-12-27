@@ -131,7 +131,6 @@ $(document).ready(function () {
     });
 
     $('.modal_content .close').click(function(){
-        // autoCall = setInterval(flowContent, 10);
         $('.modal_bg_color').hide();
     });
 
